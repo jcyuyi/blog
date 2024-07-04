@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Blog of Jcyuyi',
-  tagline: 'I write code',
+  tagline: 'Learn, practice and build',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -25,8 +25,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -36,7 +36,11 @@ const config: Config = {
         docs: false, // Optional: disable the docs plugin
         blog: {
           routeBasePath: '/', // Serve the blog at the site's root
-          /* other blog options */
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
+        },
+        theme: {
+          customCss: ['./src/css/custom.css'],
         },
       },
     ],
@@ -44,12 +48,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/android-chrome-384x384.png',
     navbar: {
       title: 'Blog of Jcyuyi',
       logo: {
         alt: 'Blog of Jcyuyi Logo',
-        src: 'img/logo.svg',
+        src: 'img/android-chrome-192x192.png',
       },
       items: [],
     },
