@@ -21,9 +21,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
@@ -40,7 +37,7 @@ const config: Config = {
           blogSidebarCount: 'ALL',
         },
         theme: {
-          customCss: ['./src/css/custom.css'],
+          customCss: ['./src/css/custom.css', './src/css/custom-color.css'],
         },
       },
     ],
@@ -58,9 +55,9 @@ const config: Config = {
       items: [],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} CC0. Blog of Jcyuyi. Built with Docusaurus.`,
+      copyright: `Blog of Jcyuyi. Copyright © ${new Date().getFullYear()} CC0. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
     },
     prism: {
       theme: prismThemes.github,
