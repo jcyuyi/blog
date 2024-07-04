@@ -57,7 +57,7 @@ const config: Config = {
     footer: {
       style: 'light',
       links: [],
-      copyright: `Blog of Jcyuyi. Copyright © ${new Date().getFullYear()} CC0. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
+      copyright: `Blog of Jcyuyi. Copyright © ${new Date().getFullYear()} CC BY-SA 3.0. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
     },
     prism: {
       theme: prismThemes.github,
