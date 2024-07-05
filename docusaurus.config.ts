@@ -40,6 +40,9 @@ const config: Config = {
         theme: {
           customCss: ['./src/css/custom.css', './src/css/custom-color.css'],
         },
+        gtag: {
+          trackingID: 'G-CT371PRG34',
+        },
       },
     ],
   ],
