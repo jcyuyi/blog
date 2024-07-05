@@ -2,3 +2,8 @@ misc:
   label: misc
   permalink: /misc
   description: Misc
+
+java:
+  label: java
+  permalink: /java
+  description: Java

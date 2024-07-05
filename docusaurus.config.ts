@@ -33,8 +33,9 @@ const config: Config = {
         docs: false, // Optional: disable the docs plugin
         blog: {
           routeBasePath: '/', // Serve the blog at the site's root
-          blogSidebarTitle: 'All posts',
+          blogSidebarTitle: '全部文章',
           blogSidebarCount: 'ALL',
+          editUrl: 'https://github.com/jcyuyi/blog/edit/main/',
         },
         theme: {
           customCss: ['./src/css/custom.css', './src/css/custom-color.css'],
