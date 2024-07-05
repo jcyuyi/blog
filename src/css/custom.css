@@ -1,7 +1,19 @@
 :root {
-    --ifm-footer-padding-vertical: 1rem
+    --ifm-footer-padding-vertical: 1rem;
 }
 
 .footer__copyright {
     font-size: small;
+}
+
+.blog-list-page h2[class*="title"] {
+  font-size: 2rem;
+}
+
+.blog-post-page h1[class*="title"] {
+  font-size: 2rem;
+}
+
+.markdown h2 {
+  --ifm-h2-font-size: 1.6rem;
 }
