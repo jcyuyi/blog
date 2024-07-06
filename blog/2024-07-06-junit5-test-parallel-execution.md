@@ -138,7 +138,7 @@ test {
 常见解决方案：
 
 - 不同测试类使用不同的数据库，如果需要共享则给使用的资源添加前后缀名称
-- 使用 [ResourceLock](https://junit.org/junit5/docs/snapshot/api/org.junit.jupiter.api/org/junit/jupiter/api/parallel/ResourceLock.html) 给资环冲突的测试加锁
+- 使用 [ResourceLock](https://junit.org/junit5/docs/snapshot/api/org.junit.jupiter.api/org/junit/jupiter/api/parallel/ResourceLock.html) 给资源冲突的测试加锁
 - 尽量减少 static 变量的使用，使用线程安全的共享变量/单例设计模式，使用 ThreadLocal
 - 每个测试使用单独的 [`@TempDir`](https://junit.org/junit5/docs/snapshot/user-guide/#writing-tests-built-in-extensions-TempDirectory)
 
