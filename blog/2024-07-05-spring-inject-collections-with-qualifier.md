@@ -1,11 +1,11 @@
 ---
 slug: spring-inject-collections-with-qualifier 
-title: Spring 中使用 @Qualifier 分组依赖注入集合类
+title: Spring @Qualifier 分组依赖注入集合
 authors: [jcyuyi]
 tags: [java]
 ---
 
-使用 Spring 的集合类依赖注入时，有时会需要对多个相同类型的 Bean 进行分组。
+使用 Spring 的集合类依赖注入时，有时需要对多个相同类型的 Bean 进行分组。
 可以使用 @Qualifier 或者自定义 Qualifier Annotation 来实现。
 
 ## @Qualifier
