@@ -1,6 +1,6 @@
 ---
 slug: junit5-test-parallel-execution
-title: JUnit5 并行测试
+title: JUnit 5 并行测试
 authors: [jcyuyi]
 tags: [java]
 ---
