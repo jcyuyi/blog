@@ -39,7 +39,7 @@ public class TestClassB extends TestClassBase {
 }
 ```
 
-## 默认执行结果
+### 默认执行结果
 
 ```
 [Test worker] INFO TestClassBase - Running test: A1 in Test worker
@@ -56,7 +56,7 @@ public class TestClassB extends TestClassBase {
 
 在 `gradle.build` 中添加 `junit.jupiter.execution.parallel` System Property：
 
-```
+```groovy
 test {
     //...
     systemProperty("junit.jupiter.execution.parallel.enabled", true)
@@ -65,7 +65,7 @@ test {
 }
 ```
 
-## 并行测试执行结果
+### 执行结果
 
 ```
 [ForkJoinPool-1-worker-5] INFO TestClassBase - Running test: A2 in ForkJoinPool-1-worker-5
@@ -86,7 +86,7 @@ test {
 
 在 `gradle.build` 中修改
 
-```
+```groovy
 test {
     //...
     systemProperty("junit.jupiter.execution.parallel.mode.default", "same_thread")
@@ -94,7 +94,7 @@ test {
 }
 ```
 
-## 仅并行测试 Class 执行结果
+### 执行结果
 
 ```
 [ForkJoinPool-1-worker-3] INFO TestClassBase - Running test: A1 in ForkJoinPool-1-worker-3
@@ -115,7 +115,7 @@ test {
 
 在 `gradle.build` 中添加
 
-```
+```groovy
 test {
     //...
     systemProperty("junit.jupiter.execution.parallel.config.strategy", "fixed")
@@ -135,7 +135,7 @@ test {
 - 共享同一个 static 变量，共享变量非线程安全
 - 共享同一个目录/文件
 
-常见解决方案：
+### 常见解决方案
 
 - 不同测试类使用不同的数据库，如果需要共享则给使用的资源添加前后缀名称
 - 使用 [ResourceLock](https://junit.org/junit5/docs/snapshot/api/org.junit.jupiter.api/org/junit/jupiter/api/parallel/ResourceLock.html) 给资源冲突的测试加锁
