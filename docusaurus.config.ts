@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -23,7 +23,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ['zh-Hans', 'en'],
   },
 
   presets: [
@@ -56,7 +56,12 @@ const config: Config = {
         alt: 'Blog of Jcyuyi Logo',
         src: 'img/android-chrome-192x192.png',
       },
-      items: [],
+      items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
     },
     footer: {
       style: 'light',

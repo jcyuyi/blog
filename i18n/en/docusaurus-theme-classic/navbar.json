@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Blog of Jcyuyi",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Blog of Jcyuyi Logo",
+    "description": "The alt text of navbar logo"
+  }
+}
